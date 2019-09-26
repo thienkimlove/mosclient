@@ -1,0 +1,6 @@
+[client]
+host = 42.112.31.173
+database = mosclient
+user = tieungao
+password = tieungao123
+default-character-set = utf8

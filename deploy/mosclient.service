@@ -1,0 +1,14 @@
+[Unit]
+Description=Mosquitto client
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+
+WorkingDirectory=/var/www/html/mosclient/project
+Environment="PATH=/var/www/html/mosclient/venv/bin"
+ExecStart=/var/www/html/mosclient/venv/bin/python manage.py mqtt
+
+[Install]
+WantedBy=multi-user.target
