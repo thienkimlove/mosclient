@@ -145,3 +145,7 @@ and `backend.scoach.vn/admin` as Laravel Backend.
 `https://askubuntu.com/questions/759071/cant-update-upgrade-du-to-could-not-execute-apt-key-to-verify-signature`
 
 `https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-16-04`
+
+* Service will timeout after `keepalive`, so we need to add to `/etc/crontab`
+
+`service mosclient restart`
