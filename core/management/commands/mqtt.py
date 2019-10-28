@@ -29,7 +29,7 @@ class Command(BaseCommand):
         client.on_connect = on_connect
         client.on_message = on_message
 
-        client.connect("mqtt.scoach.vn", 8083)
+        client.connect("mqtt.scoach.vn", port=8083, keepalive=65535)
 
         # Blocking call that processes network traffic, dispatches callbacks and
         # handles reconnecting.
